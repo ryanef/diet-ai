@@ -1,0 +1,12 @@
+main {
+    padding: 0 24px;
+}
+
+.submitButton{
+    padding: 2rem;
+    background-color: white;
+    border: 2px solid black;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+}

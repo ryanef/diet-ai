@@ -1,0 +1,64 @@
+services:
+
+  db:
+    container_name: db
+    build: 
+      context: ./postgres
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PORT=5432
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_DB=newsvectors
+      - POSTGRES_EXTENSIONS=vector
+    ports:
+      - 5432:5432
+    restart: always
+    volumes:
+      - ./postgres:/var/lib/posetgresql/data/pgdata
+
+  backend:
+    image: 'diet-app-backend'
+    restart: always
+
+    depends_on:
+      - db
+    env_file:
+      - .env
+    environment:
+      - FRONTEND_HOST=${FRONTEND_HOST}
+      - POSTGRES_SERVER=${POSTGRES_SERVER}
+      - POSTGRES_PORT=${POSTGRES_PORT}
+      - POSTGRES_DB=${POSTGRES_DB}
+      - POSTGRES_USER=${POSTGRES_USER?Variable not set}
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD?Variable not set}
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:5000/api/v1/utils/health-check/"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    ports:
+      - 5000:5000
+
+    build:
+      context: ./backend
+    volumes:
+      - ./backend/app:/app/app
+      - ~/.aws:/root/.aws:ro
+
+  frontend:
+    image: 'diet-app-react'
+    restart: always
+    ports:
+      - 3000:3000
+    environment:
+      - BACKEND_HOST=${BACKEND_HOST}
+      - VITE_COGNITO_AUTHORITY=${VITE_COGNITO_AUTHORITY}
+      - VITE_COGNITO_CLIENT_ID=${VITE_COGNITO_CLIENT_ID}
+    build:
+      context: ./frontend
+    volumes:
+      - ./frontend:/app
+
+volumes:
+  app-db-data:
+
