@@ -8,7 +8,7 @@ import Checkbox from '@mui/material/Checkbox';
 export default function Meat(){
 
     const [state, setState] = useState({
-        chicken_breasts: true,
+        chicken_breasts: false,
         chicken_thighs: false,
         ground_beef: false,
         eggs: false,

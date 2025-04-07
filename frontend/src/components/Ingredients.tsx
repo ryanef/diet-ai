@@ -7,7 +7,9 @@ import {Message, getRecipe} from  '../services/actions'
 import RecipeDisplay from './RecipeDisplay';
 
 
-const action = async (prevState, formData: FormData) => { 
+const action = async (prevState: FormData, formData: FormData) => { 
+
+  console.log(prevState)
 
   const message: Message = {
     conditions: [],

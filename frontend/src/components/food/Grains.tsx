@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import FormLabel from '@mui/material/FormLabel';
+
 import FormControl from '@mui/material/FormControl';
 import FormGroup from '@mui/material/FormGroup';
 import FormControlLabel from '@mui/material/FormControlLabel';
@@ -8,7 +8,7 @@ import Checkbox from '@mui/material/Checkbox';
 export default function Grains(){
 
     const [state, setState] = useState({
-        brown_rice: true,
+        brown_rice: false,
         white_rice: false,
         oats: false,
         quinoa: false,

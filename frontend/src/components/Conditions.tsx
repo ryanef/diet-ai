@@ -10,8 +10,8 @@ import Checkbox from '@mui/material/Checkbox';
 
     const [state, setState] = useState({
       type1_diabetes: false,
-      type2_diabetes: true,
-      chronic_kidney_disease: true
+      type2_diabetes: false,
+      chronic_kidney_disease: false
     });
 
       const {
