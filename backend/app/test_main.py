@@ -12,8 +12,6 @@ origins = [
 app = FastAPI()
 client = TestClient(app)
 
-
-
 app.add_middleware(
     CORSMiddleware,
     allow_origins=origins,

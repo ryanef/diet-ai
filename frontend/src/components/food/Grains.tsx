@@ -8,7 +8,7 @@ import Checkbox from '@mui/material/Checkbox';
 export default function Grains(){
 
     const [state, setState] = useState({
-        brown_rice: false,
+        brown_rice: true,
         white_rice: false,
         oats: false,
         quinoa: false,

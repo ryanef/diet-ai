@@ -8,7 +8,7 @@ import Checkbox from '@mui/material/Checkbox';
 export default function Cheese(){
 
     const [state, setState] = useState({
-        cheddar: false,
+        cheddar: true,
         mozzarella: false,
         parmesan: false,
         cream: false,

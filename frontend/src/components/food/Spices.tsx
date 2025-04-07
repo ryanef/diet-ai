@@ -7,17 +7,17 @@ import Checkbox from '@mui/material/Checkbox';
 export default function Spices(){
 
     const [state, setState] = useState({
-        spice_salt: false,
-        spice_pepper: false,
-        spice_cayenne: false,
-        spice_chili: false,
+        spice_salt: true,
+        spice_pepper: true,
+        spice_cayenne: true,
+        spice_chili: true,
         spice_cinnamon: false,
         spice_cumin: false,
         spice_ginger: false,
         spice_paprika: false,
         spice_oregano: false,
         spice_parsley: false,
-        spice_onionPowder: false,
+        spice_onionPowder: true,
         spice_onionChopped: false,
         spice_garlicMinced: false,
         spice_garlicPowder: false,

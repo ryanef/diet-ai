@@ -1,12 +1,17 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-
+from services.claude_sonnet import claude_sonnet
 from pydantic import BaseModel
 
 class Message(BaseModel):
     conditions: list[str]  
     ingredients: list[str]  
     user_comment: str | None
+
+class RecipeSummary(BaseModel):
+    title: str
+    description: str
+    benefits: str
 
 
 origins = [
@@ -33,8 +38,9 @@ async def root():
 
 
 @app.post("/ai/recipe")
-async def ai(message: Message):
+def ai(message: Message) -> list[RecipeSummary] :
 
     print(message)
-    return {"message": "ai route"}
+    get_recipe = claude_sonnet(message)
+    return get_recipe
 
