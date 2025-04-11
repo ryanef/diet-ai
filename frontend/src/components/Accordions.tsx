@@ -1,5 +1,4 @@
-import  { useState, startTransition} from 'react';
-import Box from '@mui/material/Box';
+import  { useState} from 'react';
 import Fruit from './food/Fruits';
 import Meat from './food/Meat';
 import Vegetables from './food/Vegetables';
@@ -15,14 +14,9 @@ import AccordionDetails from '@mui/material/AccordionDetails';
 import Typography from '@mui/material/Typography';
 import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
 import Conditions from './Conditions';
-import UserComment from './UserComment';
 import Milk from './food/Milk';
 
-interface Message {
-  conditions: string[],
-  ingredients: string[],
-  user_comment: string | null
-}
+
 export default function Accordions(){
 
     const [expanded, setExpanded] = useState<string | false>('conditions_panel');

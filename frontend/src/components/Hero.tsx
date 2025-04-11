@@ -1,48 +1,49 @@
-import AutoFixHighRoundedIcon from '@mui/icons-material/AutoFixHighRounded';
-import ConstructionRoundedIcon from '@mui/icons-material/ConstructionRounded';
-import SettingsSuggestRoundedIcon from '@mui/icons-material/SettingsSuggestRounded';
-import ThumbUpAltRoundedIcon from '@mui/icons-material/ThumbUpAltRounded';
+import {useState, useEffect, Suspense} from 'react';
+import { Box } from '@mui/material';
+import { MessageInterface } from '../types/types';
+import Typography from '@mui/material/Typography';
+import { getRecipe } from '../services/actions';
+import RecipeDisplay from './RecipeDisplay';
+import QuickStartForm from './QuickStartForm';
+import Loading from './Loading';
 
-import GetStarted from './GetStarted';
-
-const items = [
-  {
-    icon: <SettingsSuggestRoundedIcon sx={{ color: 'text.secondary' }} />,
-    title: 'Health-first recommendations',
-    description:
-      'Snap a pic or type your list — get recipes tailored to your health needs that make the most of what you have.',
-  },
-  {
-    icon: <ConstructionRoundedIcon sx={{ color: 'text.secondary' }} />,
-    title: 'Innovative Functionality',
-    description:
-      'Cutting-edge tech that stays ahead of trends and health goals.',
-  },
-  {
-    icon: <ThumbUpAltRoundedIcon sx={{ color: 'text.secondary' }} />,
-    title: 'Effortless Everyday Use',
-    description:
-      'Our AI learns what works for you—and gets better with every recipe.',
-  },
-  {
-    icon: <AutoFixHighRoundedIcon sx={{ color: 'text.secondary' }} />,
-    title: 'Personalized Like Never Before',
-    description:
-      'Our AI doesn’t just suggest meals—it adapts to you, your ingredients, and your health needs.',
-  },
-];
+function fetchRecipe(userMessage: MessageInterface){
+  return getRecipe(userMessage)
+}
+interface Recipes {
+  benefits: string;
+  title: string;
+  description: string;
+}
 
 export default function Hero() {
+  const [userMessage, setUserMessage] = useState<MessageInterface | null>(null)
+  const [recipes, setRecipe] = useState<Promise<Recipes[]> | null>(null)
+
+  useEffect(()=>{
+    if(userMessage){
+      const fetchRecipes = fetchRecipe(userMessage)
+      setRecipe(fetchRecipes)
+    }
+  }, [userMessage])
+
   return (
-    <div className='hero'>
-      <div className='hero-title'>
-  
-      </div>
-
-
+    <Box className="hero" sx={{maxWidth: '500px'}}>
+     <Suspense fallback={<Loading/>}>
       <div className="hero-get-started">
-        <GetStarted/>
+        
+        {recipes ? (<RecipeDisplay recipes={recipes} />) 
+        : (  
+          <div>
+            <Typography variant="h4" component="h2">Quick Start - Pick your Ingredients</Typography>
+              <QuickStartForm setUserMessage={setUserMessage} />
+
+          </div>
+        )}
+      
       </div>
-  </div>
+     </Suspense>
+    </Box>
   );
 }
+

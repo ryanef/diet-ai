@@ -6,7 +6,6 @@ import { AuthProvider } from "react-oidc-context";
 import './index.css'
 import App from './App.tsx'
 import About from './routes/About.tsx';
-import Chat from './routes/Chat.tsx';
 import Dashboard from './routes/Dashboard.tsx';
 
 const cognitoAuthority = import.meta.env.VITE_COGNITO_AUTHORITY
@@ -28,11 +27,10 @@ createRoot(document.getElementById('root')!).render(
             <Routes>
               <Route path="/" element={<App />} />
               <Route path="/about" element={<About />} />
-              <Route path="/chat" element={<Chat />} />
               <Route path="/dashboard" element={<Dashboard />} />
             </Routes>
           </BrowserRouter>
     </AuthProvider> 
   </StyledEngineProvider>
-  </StrictMode>,
+  </StrictMode>
 )

@@ -42,5 +42,6 @@ def ai(message: Message) -> list[RecipeSummary] :
 
     print(message)
     get_recipe = claude_sonnet(message)
+    dummy_recipe = [{"success": True, "title": "title", "description": "description", "benefits": "benefits"}]
     return get_recipe
 

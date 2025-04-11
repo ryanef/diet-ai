@@ -1,190 +1,190 @@
 [
     {
-      "condition": "type1_diabetes",
+      "condition": "Type 1 Diabetes",
       "fact": "Counting total carbohydrates (not just sugar) is essential since all carbs convert to blood glucose."
     },
     {
-      "condition": "type1_diabetes",
+      "condition": "Type 1 Diabetes",
       "fact": "Protein doesn't raise blood sugar as quickly as carbs but can affect levels several hours after eating."
     },
     {
-      "condition": "type1_diabetes",
+      "condition": "Type 1 Diabetes",
       "fact": "Alcohol can cause unexpected hypoglycemia up to 24 hours after drinking."
     },
     {
-      "condition": "type1_diabetes",
+      "condition": "Type 1 Diabetes",
       "fact": "Fat slows carbohydrate absorption, potentially delaying blood sugar spikes by 3-5 hours."
     },
     {
-      "condition": "type1_diabetes",
+      "condition": "Type 1 Diabetes",
       "fact": "Look for fiber content of 3g or more per serving to help stabilize blood sugar levels."
     },
     {
-      "condition": "type1_diabetes",
+      "condition": "Type 1 Diabetes",
       "fact": "Morning blood sugars can be higher due to dawn phenomenon even without eating (caused by hormone surges)."
     },
     {
-      "condition": "type1_diabetes",
+      "condition": "Type 1 Diabetes",
       "fact": "Exercise can lower blood sugar for up to 24 hours afterward through improved insulin sensitivity."
     },
     {
-      "condition": "type1_diabetes",
+      "condition": "Type 1 Diabetes",
       "fact": "Fiber doesn't break down into glucose, so you can subtract fiber grams from total carbs when counting."
     },
     {
-      "condition": "type1_diabetes",
+      "condition": "Type 1 Diabetes",
       "fact": "Stress hormones can raise blood sugar even without food intake."
     },
     {
-      "condition": "type1_diabetes",
+      "condition": "Type 1 Diabetes",
       "fact": "Coffee (even without sugar) may increase insulin resistance temporarily in some people."
     },
     {
-      "condition": "type2_diabetes",
+      "condition": "Type 2 Diabetes",
       "fact": "Eating protein first before carbs can reduce post-meal blood sugar spikes by up to 30%."
     },
     {
-      "condition": "type2_diabetes",
+      "condition": "Type 2 Diabetes",
       "fact": "Vinegar (1-2 tablespoons) before meals can improve insulin sensitivity and lower blood sugar responses."
     },
     {
-      "condition": "type2_diabetes",
+      "condition": "Type 2 Diabetes",
       "fact": "A 10-minute walk after meals can lower post-meal blood sugar by 10-20%."
     },
     {
-      "condition": "type2_diabetes",
+      "condition": "Type 2 Diabetes",
       "fact": "Berries have the lowest glycemic impact of all fruits due to their high fiber-to-sugar ratio."
     },
     {
-      "condition": "type2_diabetes",
+      "condition": "Type 2 Diabetes",
       "fact": "Just one night of poor sleep can increase insulin resistance by up to 25%."
     },
     {
-      "condition": "type2_diabetes",
+      "condition": "Type 2 Diabetes",
       "fact": "Cinnamon (1/2 teaspoon daily) may improve insulin sensitivity over time."
     },
     {
-      "condition": "type2_diabetes",
+      "condition": "Type 2 Diabetes",
       "fact": "Resistant starch found in cooled potatoes and rice causes smaller blood sugar spikes than when freshly cooked."
     },
     {
-      "condition": "type2_diabetes",
+      "condition": "Type 2 Diabetes",
       "fact": "Dehydration can concentrate blood sugar levels, causing falsely elevated readings."
     },
     {
-      "condition": "type2_diabetes",
+      "condition": "Type 2 Diabetes",
       "fact": "Artificial sweeteners may alter gut bacteria and potentially worsen glucose tolerance in some individuals."
     },
     {
-      "condition": "type2_diabetes",
+      "condition": "Type 2 Diabetes",
       "fact": "Intermittent fasting approaches may improve insulin sensitivity more than constant calorie restriction."
     },
     {
-      "condition": "chronic_kidney_disease",
+      "condition": "Chronic Kidney Disease",
       "fact": "Phosphorus additives on food labels (anything with 'phos') are absorbed at nearly 100% compared to 40-60% from natural sources."
     },
     {
-      "condition": "chronic_kidney_disease",
+      "condition": "Chronic Kidney Disease",
       "fact": "Many over-the-counter medications contain hidden sodium, phosphorus, or potassium compounds."
     },
     {
-      "condition": "chronic_kidney_disease",
+      "condition": "Chronic Kidney Disease",
       "fact": "Dark sodas contain phosphoric acid, which adds to phosphorus intake limits."
     },
     {
-      "condition": "chronic_kidney_disease",
+      "condition": "Chronic Kidney Disease",
       "fact": "Leaching potatoes (cutting, soaking in water for 4+ hours, then boiling) can reduce potassium content by up to 50%."
     },
     {
-      "condition": "chronic_kidney_disease",
+      "condition": "Chronic Kidney Disease",
       "fact": "One teaspoon of table salt contains approximately 2,300mg of sodium—the entire daily recommended limit."
     },
     {
-      "condition": "chronic_kidney_disease",
+      "condition": "Chronic Kidney Disease",
       "fact": "Star fruit contains a neurotoxin that can be dangerous for people with kidney disease, even in small amounts."
     },
     {
-      "condition": "chronic_kidney_disease",
+      "condition": "Chronic Kidney Disease",
       "fact": "Most salt substitutes use potassium chloride instead of sodium, making them unsafe for those on potassium restrictions."
     },
     {
-      "condition": "chronic_kidney_disease",
+      "condition": "Chronic Kidney Disease",
       "fact": "Processed cheese can contain phosphate additives that deliver 2-3 times more phosphorus than natural cheese."
     },
     {
-      "condition": "chronic_kidney_disease",
+      "condition": "Chronic Kidney Disease",
       "fact": "Protein needs often decrease as kidney function declines to reduce the workload on remaining nephrons."
     },
     {
-      "condition": "chronic_kidney_disease",
+      "condition": "Chronic Kidney Disease",
       "fact": "Certain herbal teas like dandelion, nettle, and alfalfa have natural diuretic properties that can stress the kidneys."
     },
     {
-      "condition": "chronic_kidney_disease",
+      "condition": "Chronic Kidney Disease",
       "fact": "A serving size of meat should be about the size of a deck of cards to help manage protein intake."
     },
     {
-      "condition": "chronic_kidney_disease",
+      "condition": "Chronic Kidney Disease",
       "fact": "Labels listing 'organic' or 'natural' phosphorus still count toward your daily phosphorus limits."
     },
     {
-      "condition": "chronic_kidney_disease",
+      "condition": "Chronic Kidney Disease",
       "fact": "White bread contains less phosphorus and potassium than whole grain, making it often preferred for kidney diets."
     },
     {
-      "condition": "chronic_kidney_disease",
+      "condition": "Chronic Kidney Disease",
       "fact": "Moderate protein restriction may slow progression of kidney disease in some patients."
     },
     {
-      "condition": "chronic_kidney_disease",
+      "condition": "Chronic Kidney Disease",
       "fact": "Non-dairy creamers often contain phosphate additives despite being marketed as kidney-friendly alternatives to milk."
     },
     {
-        "condition": "type1_diabetes",
+        "condition": "Type 1 Diabetes",
         "fact": "Monitor carbohydrate intake carefully to balance insulin and blood sugar levels."
       },
       {
-        "condition": "type1_diabetes",
+        "condition": "Type 1 Diabetes",
         "fact": "Use nutrition labels to spot hidden sugars and manage carb counts effectively."
       },
       {
-        "condition": "type1_diabetes",
+        "condition": "Type 1 Diabetes",
         "fact": "Choose low glycemic index foods to help maintain stable blood sugar throughout the day."
       },
       {
-        "condition": "type1_diabetes",
+        "condition": "Type 1 Diabetes",
         "fact": "Regularly check serving sizes on labels to ensure accurate insulin dosing."
       },
       {
-        "condition": "type2_diabetes",
+        "condition": "Type 2 Diabetes",
         "fact": "Prioritize high-fiber, low-sugar foods to support steady blood sugar levels."
       },
       {
-        "condition": "type2_diabetes",
+        "condition": "Type 2 Diabetes",
         "fact": "Reading labels helps you choose whole grains over refined carbohydrates."
       },
       {
-        "condition": "type2_diabetes",
+        "condition": "Type 2 Diabetes",
         "fact": "Control portions and avoid processed foods high in added sugars and fats."
       },
       {
-        "condition": "type2_diabetes",
+        "condition": "Type 2 Diabetes",
         "fact": "Opt for lean proteins and healthy fats to maintain balanced blood glucose."
       },
       {
-        "condition": "chronic_kidney_disease",
+        "condition": "Chronic Kidney Disease",
         "fact": "Limit sodium by choosing products with low-salt labels to reduce fluid retention."
       },
       {
-        "condition": "chronic_kidney_disease",
+        "condition": "Chronic Kidney Disease",
         "fact": "Check labels for potassium content, especially if managing advanced kidney issues."
       },
       {
-        "condition": "chronic_kidney_disease",
+        "condition": "Chronic Kidney Disease",
         "fact": "Avoid phosphorus additives in processed foods by reading ingredient lists carefully."
       },
       {
-        "condition": "chronic_kidney_disease",
+        "condition": "Chronic Kidney Disease",
         "fact": "Select fresh or minimally processed foods to better manage mineral intake for kidney health."
       }
   ]

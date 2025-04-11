@@ -31,8 +31,7 @@ def claude_sonnet(message):
 
         # Extract and print the response text.
         response_text = response["output"]["message"]["content"][0]["text"]
-        print(response_text)
-        print(type(response_text))
+
         data=[]
        
         try:

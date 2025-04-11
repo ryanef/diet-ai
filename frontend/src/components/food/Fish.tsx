@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-
 import FormControl from '@mui/material/FormControl';
 import FormGroup from '@mui/material/FormGroup';
 import FormControlLabel from '@mui/material/FormControlLabel';
@@ -10,11 +9,10 @@ import Checkbox from '@mui/material/Checkbox';
   export default function Fish(){
 
     const [state, setState] = useState({
-
-        tuna: false,
         salmon: false,
-        tilapia: false,
         shrimp: false,
+        tuna: false,
+        tilapia: false,
 
       });
 

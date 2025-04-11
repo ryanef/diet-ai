@@ -4,3 +4,4 @@ react/node_modules
 .dockerignore
 **/__pycache__
 **/*.pyc
+**/dist

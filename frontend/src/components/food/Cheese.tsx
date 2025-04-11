@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-
 import FormControl from '@mui/material/FormControl';
 import FormGroup from '@mui/material/FormGroup';
 import FormControlLabel from '@mui/material/FormControlLabel';
@@ -8,17 +7,16 @@ import Checkbox from '@mui/material/Checkbox';
 export default function Cheese(){
 
     const [state, setState] = useState({
-        cheddar: false,
-        mozzarella: false,
-        parmesan: false,
-        cream: false,
         brie: false,
+        cheddar: false,
+        cottage: false,
+        cream: false,
+        mozzarella: false,
         feta: false,
         swiss: false,
-        provolone: false,
-       
-        cottage: false,
         montereyJack: false,
+        parmesan: false,
+        provolone: false,
         quesoAsadero: false,
         quesadilla: false
       });
