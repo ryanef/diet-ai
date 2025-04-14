@@ -27,9 +27,9 @@ export default function Facts(){
 
     return (
         <>
-        <h4>Random Facts while you wait:</h4>
-        <p>Condition: {fact?.condition}</p>
-            <p>Fact: {fact?.fact}</p>
+        <h3>Random Facts while you wait:</h3>
+        <h4>Condition: {fact?.condition}</h4>
+        <p className="randomFact">Fact: {fact?.fact}</p>
         </>
     )
 }

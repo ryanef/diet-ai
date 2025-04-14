@@ -1,5 +1,6 @@
 *.env
 **/**/*.env
+**/**/*.env.*
 react/node_modules
 .dockerignore
 **/__pycache__

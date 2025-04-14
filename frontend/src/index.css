@@ -11,3 +11,11 @@ main {
     text-align: center;
     cursor: pointer;
 }
+
+.randomFact {
+    font-size: 1.2rem;
+}
+
+.MuiCardHeader-title{
+    font-size: 1.2rem;
+}

@@ -76,6 +76,7 @@ export default function RecipeDisplay({recipes}: {recipes: Promise<Recipes[] | n
             return (
                 <Card sx={{ maxWidth: 345 }}>
                 <CardHeader
+        
                   avatar={
                     <Avatar sx={{ bgcolor: red[500] }} aria-label="recipe">
                       {index+1}
