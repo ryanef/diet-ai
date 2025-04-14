@@ -56,7 +56,7 @@ import Checkbox from '@mui/material/Checkbox';
             />
             <FormControlLabel
               control={
-                <Checkbox checked={spaghettiWhite} onChange={handleChange} name="spaghetti" />
+                <Checkbox checked={spaghettiWhite} onChange={handleChange} name="spaghettiWhite" />
               }
               label="Spaghetti (white, refined)"
             />
